@@ -2,7 +2,7 @@
 
 # Keep Tracking
 
-### Traceur GPS discret et autonome pour motos et scooters
+### Traceur GPS discret et autonome 
 
 ![Statut](https://img.shields.io/badge/statut-phase%20de%20conception-orange)
 ![Matériel](https://img.shields.io/badge/mat%C3%A9riel-STM32WLE5%20%7C%20u--blox%20MAX--M10S-blue)
