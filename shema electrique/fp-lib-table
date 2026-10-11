@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "keeptracker")(type "KiCad")(uri "${KIPRJMOD}/keeptracker.pretty")(options "")(descr "Empreintes du projet Keep Tracking"))
+)

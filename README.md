@@ -1,3 +1,4 @@
+
 <div align="center">
 
 # Keep Tracking
@@ -157,7 +158,8 @@ flowchart LR
     S --> PP[Power-path]
     B[Batterie Li-ion] --> PP
     PP --> V[Rail 3,3 V]
-    V --> M[MCU LoRa]
+    V --> M[ LTE-M / NB-IoT +
+2G]
     V --> G[GNSS commutable]
     V --> A[Accéléromètre]
 ```
