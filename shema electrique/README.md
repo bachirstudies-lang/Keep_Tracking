@@ -24,12 +24,11 @@ python generate_schematic.py keeptracker.kicad_sch
 | `keeptracker.net` | Netlist |
 | `keeptracker_erc.rpt` | Rapport ERC : 0 erreur, 0 avertissement |
 | `keeptracker.pretty/` | Empreintes projet : TPS22916 (DSBGA-4 YFP), antenne Abracon ACAG1204-868-T |
-| `rev_A/`, `rev_B/` | Révisions précédentes (archives) |
 
 ## Révision C — principales évolutions
 
 - **Brochages vérifiés sur les datasheets constructeur** (STM32WLE5 UFQFPN48, TPS63900, MAX-M10S, LIS2DW12,
-  BQ24074, LTC3588, MAX17048…) — les rév. A/B comportaient des brochages erronés.
+  BQ24074, LTC3588, MAX17048…).
 - **Charge Li-ion** : ITERM du BQ24074 programmé à 60 mA (fin de charge correcte).
 - **Pertes d'énergie réduites** : OR-ing des sources par 2 × LM66100 (blocage du courant inverse),
   équilibrage des supercondensateurs sans fuite (ALD910025), V_BCKP GNSS commuté, pull-ups 100 kΩ côté batterie.
