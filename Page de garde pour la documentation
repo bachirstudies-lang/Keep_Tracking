@@ -1,0 +1,157 @@
+\documentclass[11pt,a4paper]{article}
+
+% ============================================================
+% PACKAGES
+% ============================================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[french]{babel}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+% ============================================================
+% COULEURS
+% ============================================================
+\definecolor{kt-vert}{RGB}{16,185,129}
+\definecolor{kt-bleu}{RGB}{4,30,66}
+\definecolor{kt-gris}{RGB}{140,148,160}
+\definecolor{kt-clair}{RGB}{230,238,247}
+
+\newcommand{\entete}[1]{\textbf{\color{kt-bleu}#1}}
+
+% ============================================================
+% TITRES
+% ============================================================
+\titleformat{\section}
+{\Large\bfseries\itshape\color{blue}}
+{\thesection}{0.8em}{}
+
+\titleformat{\subsection}
+{\large\bfseries\itshape\color{blue}}
+{\thesubsection}{0.8em}{}
+
+\titlespacing*{\section}
+{0pt}{1.6em plus 0.5em minus 0.2em}{0.9em}
+
+\titlespacing*{\subsection}
+{0pt}{1.2em plus 0.4em minus 0.2em}{0.6em}
+
+% ============================================================
+% PIED DE PAGE ET LÉGENDES
+% ============================================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\captionsetup{
+    font=small,
+    labelfont={bf,color=kt-bleu},
+    labelsep=period
+}
+
+\setstretch{1.12}
+
+% ============================================================
+% STYLE COMMUN DES GRAPHIQUES
+% ============================================================
+\pgfplotsset{
+  kt/.style={
+    width=\textwidth,
+    height=6.6cm,
+    axis lines=left,
+    axis line style={kt-gris},
+    ymajorgrids=true,
+    major grid style={dotted,kt-gris!70},
+    tick style={kt-gris},
+    tick label style={font=\footnotesize},
+    label style={
+        font=\footnotesize\bfseries,
+        color=kt-bleu
+    },
+    ymin=0,
+    enlarge x limits=0.14,
+    bar width=26pt,
+    every node near coord/.append style={
+        font=\scriptsize\bfseries,
+        color=kt-bleu
+    },
+    xticklabel style={
+        align=center,
+        font=\scriptsize
+    },
+  }
+}
+
+% ============================================================
+% DOCUMENT
+% ============================================================
+\begin{document}
+
+% ============================================================
+% PAGE DE GARDE
+% ============================================================
+
+\begin{minipage}{0.45\textwidth}
+    \includegraphics[width=4cm]{gnss.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+    \raggedleft
+    \includegraphics[width=4cm]{insa.jpg}
+\end{minipage}
+
+\vspace{5cm}
+
+\begin{center}
+    \huge \bfseries
+    Compte rendu
+    \textcolor{blue}{\textit{Descriptif du Projet -- GPS TRACKER}}
+    
+    \vspace{2cm}
+\end{center}
+
+\vspace{3cm}
+
+\begin{center}
+\large
+\emph{Travail réalisé par} :
+
+\vspace{0.3cm}
+
+Moqrane Bachir \\
+ALAA EDDINE DOUIMI \\
+Laghbissi Wissal \\
+Ezzouhri Nidal
+\end{center}
+
+\vfill
+
+\begin{center}
+    \begin{minipage}{8cm}
+        \textbf{\textit{Année universitaire : 2026-2027}}
+    \end{minipage}
+    \hspace{1cm}
+    \begin{minipage}{6cm}
+        \textbf{\textit{\textcolor{blue}{Encadré par : MR Duclos}}}
+    \end{minipage}
+\end{center}
+
+\newpage
+\end{document}
